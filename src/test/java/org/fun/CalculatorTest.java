@@ -12,4 +12,19 @@ class CalculatorTest {
         assertEquals(0, calculator.getValue());
     }
 
+    @Test
+    public void addingFiveResultsFive() {
+        Calculator calculator = new Calculator();
+        calculator.add(5);
+        assertEquals(5, calculator.getValue());
+    }
+
+    @Test
+    public void subtractingTwoResultsThree() {
+        Calculator calculator = new Calculator();
+        calculator.add(5);
+        calculator.subtract(2);
+        assertEquals(3, calculator.getValue());
+    }
+
 }
